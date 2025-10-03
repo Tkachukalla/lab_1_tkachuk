@@ -1,0 +1,12 @@
+on:
+  push:
+
+jobs:
+  test:
+    name: Test pyfile
+    runs-on: windows-latest
+
+    steps:
+    - name: npm install, build and test
+      run: python PyTest.py
+
